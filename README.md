@@ -1,160 +1,111 @@
-Overview:
+# Installation
 
-Secure Notes Application is a Java-based desktop application designed to securely store and manage personal notes using AES encryption. The project focuses on security, usability, and modern UI design while demonstrating concepts such as authentication, encryption, database connectivity, and session management.
+## Prerequisites
 
-Features
-Security
+Before running the application, make sure the following software is installed on your system:
 
+- Java JDK 17 or higher
+- MySQL Server
+- Maven
+- IntelliJ IDEA
 
-AES encryption for secure note storage
+---
 
+# Setup Instructions
 
-Password-based user authentication
+## Step 1: Clone the Repository
 
-
-Auto logout timer
-
-
-Encrypted note export support
-
-
-Secure database integration
-
-
-Notes Management
-
-
-Create notes
-
-
-Edit notes
-
-
-Delete notes
-
-
-Search notes
-
-
-Dashboard for note management
-
-
-User Interface
-
-
-Dark mode interface
-
-
-Smooth animations
-
-
-Responsive dashboard layout
-
-
-User-friendly design
-
-
-Additional Functionalities
-
-
-Login and registration system
-
-
-Session handling
-
-
-Input validation
-
-
-Error handling
-
-
-
-Technologies Used
-
-
-Java
-
-
-Java Swing
-
-
-Maven
-
-
-MySQL
-
-
-JDBC
-
-
-AES Encryption
-
-
-IntelliJ IDEA
-
-
-
-<img width="361" height="400" alt="image" src="https://github.com/user-attachments/assets/e46c66d6-b1ff-490c-8271-cffa8e84e624" />
-
-
-Installation
-Prerequisites
-
-
-Java JDK 17 or higher
-
-
-MySQL Server
-
-
-Maven
-
-
-IntelliJ IDEA
-
-
-
-Setup Instructions
-Clone the Repository
+```bash
 git clone https://github.com/your-username/secure-notes-app.git
-Configure Database
-Create a database in MySQL:
+```
+
+---
+
+## Step 2: Open the Project
+
+1. Open IntelliJ IDEA  
+2. Click on "Open"  
+3. Select the cloned project folder  
+4. Open it as a Maven project  
+
+---
+
+## Step 3: Configure the Database
+
+Open MySQL and create a database:
+
+```sql
 CREATE DATABASE securenotes;
-Update database credentials in:
+```
+
+Update your database credentials inside:
+
+```plaintext
 DatabaseConnection.java
-Install Dependencies
+```
+
+Example:
+
+```java
+private static final String URL = "jdbc:mysql://localhost:3306/securenotes";
+private static final String USER = "root";
+private static final String PASSWORD = "your_password";
+```
+
+---
+
+## Step 4: Install Maven Dependencies
+
+Open terminal inside the project folder and run:
+
+```bash
 mvn clean install
-Run the Application
-Run the main Java file from IntelliJ IDEA.
+```
 
-Encryption
-The application uses AES encryption to protect user notes before storing them in the database.
+This will automatically download all required dependencies.
 
-Future Improvements
+---
 
+## Step 5: Run the Application
 
-Cloud synchronization
+1. Open the project in IntelliJ IDEA  
+2. Locate the main Java file  
+3. Right-click the file  
+4. Click "Run"  
 
+The application should now start successfully.
 
-Two-factor authentication
+---
 
+# Encryption
 
-File attachments
+The application uses AES (Advanced Encryption Standard) encryption to secure user notes before storing them in the database.
 
+## Benefits of AES Encryption
 
-Mobile application support
+- Strong data protection
+- Secure local storage
+- Protection against unauthorized access
 
+---
 
-Password recovery system
+# Future Improvements
 
+- Cloud synchronization
+- Two-factor authentication
+- File attachments
+- Mobile application support
+- Password recovery system
+- Biometric authentication
 
-Biometric authentication
+---
 
+# License
 
-
-License
 This project is licensed under the MIT License.
 
-Author
+---
+
+# Author
+
 Rishi Tripathi
