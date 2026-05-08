@@ -1,4 +1,5 @@
-Overview
+Overview:
+
 Secure Notes Application is a Java-based desktop application designed to securely store and manage personal notes using AES encryption. The project focuses on security, usability, and modern UI design while demonstrating concepts such as authentication, encryption, database connectivity, and session management.
 
 Features
@@ -94,23 +95,8 @@ IntelliJ IDEA
 
 
 
-Project Structure
-SecureNotes/
-│
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com/securenotes/
-│   │   │       ├── ui/
-│   │   │       ├── service/
-│   │   │       ├── database/
-│   │   │       ├── model/
-│   │   │       └── utils/
-│   │   │
-│   │   └── resources/
-│
-├── pom.xml
-└── README.md
+<img width="361" height="400" alt="image" src="https://github.com/user-attachments/assets/e46c66d6-b1ff-490c-8271-cffa8e84e624" />
+
 
 Installation
 Prerequisites
