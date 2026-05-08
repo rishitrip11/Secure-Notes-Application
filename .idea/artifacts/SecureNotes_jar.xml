@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SecureNotes:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/SecureNotes_jar</output-path>
+    <root id="archive" name="SecureNotes.jar">
+      <element id="module-output" name="SecureNotes" />
+      <element id="module-test-output" name="SecureNotes" />
+    </root>
+  </artifact>
+</component>
